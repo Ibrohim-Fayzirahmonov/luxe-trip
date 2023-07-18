@@ -28,7 +28,7 @@
 <script setup>
 import {ref} from "vue";
 
-import { navLinks } from "../../Constans/navlinks.js"
+import { navLinks } from "../../Constants/navlinks.js"
 
 const navlink = ref(navLinks)
 
