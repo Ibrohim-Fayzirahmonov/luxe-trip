@@ -55,10 +55,10 @@
                     </a-menu-item>
 
                     <a-menu-divider />
-                    <a-menu-item key="3">
-                      <a href="/" class="flex items-center gap-x-2">
+                    <a-menu-item key="3" @click="logOut">
+                      <router-link to="/login" class="flex items-center gap-x-2">
                         <i class='bx bxs-log-out'></i><span>Chiqish</span>
-                      </a>
+                      </router-link>
                     </a-menu-item>
                   </a-menu>
 
@@ -74,7 +74,7 @@
 </template>
 
 <script setup>
-
+import { logOut } from "../../helper/logout";
 </script>
 
 <style lang="scss" scoped></style>
